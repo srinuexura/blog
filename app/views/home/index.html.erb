@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>  
+    <link href='stylesheets/screen.css' media='screen, projection' rel='stylesheet' type='text/css' />
+    <link href='stylesheets/print.css' media='print' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css' />
+    <link href='stylesheets/flexslider.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='stylesheets/elastislide.css' media='screen' rel='stylesheet' type='text/css' />
+    <script src='javascripts/jquery172.min.js' type='text/javascript'></script>
+    <script src='javascripts/jquery.flexslider-min.js' type='text/javascript'></script>
+    <script src='javascripts/scripts.js' type='text/javascript'></script>
+    <script src='javascripts/jquery.elastislide.js' type='text/javascript'></script>
+    <link href='http://fonts.googleapis.com/css?family=Magra:400,700' rel='stylesheet' type='text/css' />
+  </head>
+  <body id='2col'>
+         <div class='header_container'>
+        <div id='user_cp'>
+          <!-- /%img.avatar24{:src=>"images/avatars/#{rand(25)+1}.jpg"} -->
+          <span class='arrow'>
+            &#9660;
+          </span>
+        </div>
+      </div>
+<div class="navbar navbar-fixed-top">
+   <div class="navbar-inner">
+     <div class="container">
+        <a class="brand" href="index.html"> <%= link_to image_tag("1.jpg",alt:"exura")%></a>
+     </div>
+   </div>
+ </div>
+     <div class='content_area'>
+      <div class='flex-container' id='flexslider'>
+        <div class='flexslider home_slider'>
+          <ul class='slides'>
+             <li>
+		<%= link_to image_tag("2.jpg",alt:"exura")%>
+            </li>
+            <li>
+		<%= link_to image_tag("3.jpg",alt:"exura")%>
+            </li>
+            <li>
+		<%= link_to image_tag("4.jpg",alt:"exura")%>
+            </li>
+            <li>
+		<%= link_to image_tag("5.jpg",alt:"exura")%>
+            </li>
+            <li>
+		<%= link_to image_tag("6.jpg",alt:"exura")%>
+            </li>
+          </ul>
+        </div>
+</div>
+</div>
+        <div id='texture'></div>
+        <div id='infobox' style='height: 1.5em'></div>
+        <div id='cannonball'>
+          <h4 class='blue'>Plan your most thrilling adventure vaction yet with us! &darr;</h4>      
+          <div class='field'>
+            <label>Activity Type</label>
+            <select>
+              <option>Hotair Ballooning</option>
+	      <option>Micro Lighting</option>
+              <option>Scuba Diving</option>
+              <option>Zorbing</option>
+            </select>
+          </div>
+          <div class='float_right'>
+            <a class='btn_blue' href='#'>Search</a>
+          </div>
+        </div>
+      </div>
+      <div class='es-carousel-wrapper' id='categories_carousel'>
+        <h3 class='blue'>What thrills you the most?! &darr;</h3>
+        <div class='es-carousel'>
+          <ul>
+            <li>
+             <%= link_to image_tag("LandClimbing.png",alt:"exura")%>
+	     LandClimbing
+              </li>
+            <li>
+             <%= link_to image_tag("WaterSurfing.png",alt:"exura")%>
+                WaterSurfing
+              </li>
+            <li>
+	    <%= link_to image_tag("CaveExploration.png",alt:"exura")%>
+                CaveExploration
+               </li>
+            <li>
+	    <%= link_to image_tag("AllTerrainTrail.png",alt:"exura")%>
+                AllTerrainTrail
+            </li>
+            <li>
+	    <%= link_to image_tag("RockClimbing.png",alt:"exura")%>
+              RockClimbing
+            </li>
+             <li>
+	      <%= link_to image_tag("BoatTour.png",alt:"exura")%>
+                BoatTour
+            </li>
+            <li>	
+	      <%= link_to image_tag("SkubaDiving.png",alt:"exura")%>
+                SkubaDiving
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id='left_col8'>
+          <div class='sider_box_green deal_box'>
+	<%= link_to image_tag("18.jpg",alt:"exura") %>
+          <div class='details'>
+            <h3 class='blue'>Micro Lighting &dash; Generic content.</h3>
+            <p>Misty mountains, winding roads, teak wood forests, lush green valleys, orange groves, unending stretches of tea plantations, inviting smells of coffee and cardamom- that is Coorg in all its splendour. This pristine location is a prime spot for tourists, nature lovers and adventurers. Situated in the Western Ghats, about 252 kms from Bangalore, Coorg is one of the most beautiful hill stations you can visit.</p>
+            <a class='more' href='#'>more &rarr;</a>
+          </div>
+          <a class='buy_button btn_orange' href='#'>Explore!</a>
+        </div>
+<div class='sider_box_green deal_box'>
+<%= link_to image_tag("19.jpg",alt:"exura")%>
+          <div class='details'>
+            <h3 class='blue'>Hot air Ballooning  &dash; Generic content.</h3>
+            <p>The Hot air balloons travel with the wind, so you never know which picturesque place you are going to land on, but manoeuvred by expert pilots the landing is really smooth. The crew will be waiting at the landing site to assist with the landing. Then you can take part in deflating the balloon and help in packing it away..</p>
+            <p>Quidem excepturi mollitia similique possimus quia. Esse et aut amet suscipit. Dolore occaecati ab.</p>
+            <a class='more' href='#'>more &rarr;</a>
+          </div>
+          <a class='buy_button btn_orange' href='#'>Explore!</a>
+        </div>
+        <div class='sider_box_green deal_box'>
+<%= link_to image_tag("20.jpg",alt:"exura")%>
+          <div class='details'>
+            <h3 class='blue'>Scuba Diving &dash; Generic content.</h3>
+            <p>The scuba diving wetsuit is largely determined by the individual needs and desires of the scuba diver, whether he or she is new to the diving fraternity or a seasoned veteran. One of the first and foremost issues that need consideration is the conditions in which the diver will be using the scuba diving wetsuit. The conditions will naturally determine the desired thickness, and related functionality of the new purchase.</p>
+            <a class='more' href='#'>more &rarr;</a>
+          </div>
+          <a class='buy_button btn_orange' href='#'>Explore!</a>
+        </div>
+      </div>
+      <div class='subsection_content'></div>
+      <div id='right_col4'>
+        <div class='sider_box_green'>
+	</div>
+        <div class='sider_box_orange'>
+          <div class='heading'>
+            <h4>Adventure Zone</h4>
+          </div>
+          <div class='section grey'> x
+            Adipisci architecto et. Incidunt nobis iure perspiciatis inventore modi. Quam sapiente et. Omnis est laudantium vero iste quia at eos.
+          </div>
+          <div class='section grey'>
+            Unde ut natus perferendis illum cupiditate sit. Ut ab dicta dolores eum cum aperiam. Laboriosam fuga est consequuntur. Reiciendis rerum quod. Sit aut ipsa impedit ut non dolorem repellat.
+          </div>
+        </div>
+        <div class='sider_box_blue'>
+          <div class='heading'>
+            <h4>Videos</h4>
+          </div>
+          <div class='section'>
+            Omnis et ex quo. Rem tempora dicta. Doloribus asperiores optio earum nam. Qui fugit ut ipsa et placeat aut. Rerum minus eaque at eum.
+<p><iframe src="http://www.youtube.com/embed/zG22qQydPVQ" frameborder="0" width="350" height="200"></iframe></p>
+<p><iframe width="350" height="200" src="http://www.youtube.com/embed/yKWoPlL2B8I" frameborder="0"></iframe></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='floatfix'></div>
+  </body>
+  </div> 
+	
+</html>

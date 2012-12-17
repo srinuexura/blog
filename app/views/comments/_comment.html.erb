@@ -1,0 +1,13 @@
+<p>
+  <b>name:</b>
+  <%= comment.name %>
+</p>
+ 
+<p>
+  <b>comment:</b>
+  <%= comment.your_comment %>
+</p>
+<p><%= comment.created_at.localtime %>
+</p>
+<p><%= time_ago_in_words(comment.created_at) %> ago </p>
+

@@ -1,0 +1,34 @@
+<h1>List of posts</h1>
+
+<table>
+  <% @posts.each do |post| %>
+  <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+     <td>
+       <dl>
+        <dt><h3><%= post.title %></h3></dt>
+          <%= image_tag post.image.url(:medium) %>
+        <dd><%= truncate(strip_tags(post.description),
+        length: 180) %>
+       </dd>
+     </dl>
+    </td>
+   <!-- same as above -->
+   <!-- <td>
+        <%= image_tag post.image.url(:thumb) %>
+      </td>
+         <td class="list_description">
+      <dl>
+        <dt><%= post.title %></dt>
+        <dd><%= truncate(strip_tags(post.description),
+         length: 80) %></dd>
+      </dl>
+   </td> -->
+
+    <td><%= link_to 'Comment', post_path(post) %></td>
+       <!-- <td><%= link_to 'Edit', edit_post_path(post) %></td>
+       <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+    </tr>
+     <% end %>
+</table>
+   
+    <!-- <%= link_to 'New Post', new_post_path %> -->

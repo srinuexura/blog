@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exura</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<div id="topnav">
+<%= link_to image_tag("logo.png",alt:"exura") %>
+<div style="float:right;width:420px;word-spacing:5px;font-size:80%;padding-right:13px;padding-top:7px;color:#FF0000;white-space:nowrap;text-align:right;">
+
+<%= link_to "Home",root_url %> <span> | </ span>
+<%= link_to "Blog",posts_url %> <span> | </ span>
+<%= link_to "Contact",contact_url %> <span> | </ span>
+<%= link_to "Aboutus",aboutus_url %> <span> | </ span>
+<%= link_to "Signup",signups_url %> 
+</div>
+</div>
+<hr />
+</head>
+<body>
+<%= yield %>
+<div class="footer-bottom">
+<hr />
+<div style="padding-left: 20px"> &copy; Exura.in@2012.  All Rights Reserved </div>
+</div>
+</footer>
+</body>
+</html>

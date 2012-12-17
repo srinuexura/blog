@@ -1,0 +1,39 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.posts {
+   table {
+     border-collapse: collapse;
+}
+   
+.list_image {
+   width: 60px;
+   height: 70px;
+}
+.list_description {
+   width: 30px;
+   dl {
+    margin: 0;
+  }
+  dt{
+   color: #350FEF;
+   font-weight: bold;
+   font-size: larger;
+  }
+  dd {
+   margin: 0;
+}
+}
+   .list_actions {
+    font-size:  X-small;
+    text-align: right;
+    padding-left: 5em;
+}
+   .list_line_even {
+    background: #E518D7;
+}
+   .list_line_odd {
+     background: #14BAB8;
+}
+}
